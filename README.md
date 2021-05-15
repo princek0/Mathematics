@@ -6,3 +6,4 @@ This repository is for my maths related projects coded in python.
 - DiophantineSolver.py
 - IntegralSolver.py
 - DerivativeSolver.py
+- RandomFunctions.py
