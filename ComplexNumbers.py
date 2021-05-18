@@ -82,7 +82,7 @@ class Cnumber:
         else:
             return False
 
-    def __lt__(self, other):
+    def __lt__(self, other): # Compares moduli of numbers.
         if self.modulus() < other.modulus():
             return True
         else:
