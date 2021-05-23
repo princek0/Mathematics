@@ -15,13 +15,13 @@ def factor(n):  # Returns all factors of n in a list.
     return factors
 
 
-@lru_cache(maxsize=5)
-def gcd(n, k):  # Returns the greatest common divisor of n and k.
-    r = n % k
-    if r == 0:
-        return k
-    else:
-        return gcd(n, r)
+def gcd(n, k):
+    while k:
+        n, k = k, n % k
+    return n
+
+
+gcd2 = lambda n, k: n if k == 0 else gcd(k, n % k)
 
 
 def lcm(n, k):  # Returns the lowest common multiple of n and k.
@@ -36,6 +36,9 @@ def factorial(n):  # Returns the factorial of n.
     return f
 
 
+factorial2 = lambda n: 1 if n <= 1 else n * factorial2(n - 1)  # Returns the factorial of n.
+
+
 @lru_cache(maxsize=5)
 def fibonacci(n):  # Returns the nth fibonacci number.
     if n <= 1:
@@ -43,8 +46,8 @@ def fibonacci(n):  # Returns the nth fibonacci number.
     return fibonacci(n - 1) + fibonacci(n - 2)
 
 
+fibonacci2 = lambda n: n if n <= 1 else fibonacci2(n - 1) + fibonacci2(n - 2)  # Returns the nth fibonacci number.
+
+
 def triangular(n):  # Returns the nth triangular number.
     return (n ** 2 + n) / 2
-
-
-
