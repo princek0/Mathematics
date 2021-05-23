@@ -1,6 +1,6 @@
-Python projects for Mathematics
+Projects for Mathematics
 ===============================
-This repository is for my maths related projects coded in python.
+This repository is for my maths related projects.
 </br>
 - ComplexNumbers.py
 - RandomAlgorithms.py
