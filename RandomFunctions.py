@@ -52,6 +52,7 @@ fibonacci2 = lambda n: n if n <= 1 else fibonacci2(n - 1) + fibonacci2(n - 2)  #
 def triangular(n):  # Returns the nth triangular number.
     return (n ** 2 + n) / 2
 
+
 def roman_num(n):  # Converts denary numbers to roman numerals.
     if n > 3999:
         return None
