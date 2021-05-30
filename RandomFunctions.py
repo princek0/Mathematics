@@ -1,7 +1,7 @@
 from functools import lru_cache
 
 
-def factor(n):  # Returns all factors of n in a list.
+def factor(n):  # Returns prime factors in a list.
     d = 2
     factors = []
     while n >= d * d:
