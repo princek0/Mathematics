@@ -5,6 +5,4 @@ This repository is for my maths related projects.
 - ComplexNumbers.py
 - RandomAlgorithms.py
 - RandomFunctions.py
-- unknown.py
-- unknown.py
 
