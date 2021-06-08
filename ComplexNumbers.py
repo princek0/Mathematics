@@ -65,40 +65,22 @@ class Cnumber:
         return "{}(cos({})+isin({}))".format(self.modulus() ** n, self.arg() * n, self.arg() * n)
 
     def __eq__(self, other):  # Compares whether both real and imaginary parts are equivalent.
-        if self.re == other.re and self.im == other.im:
-            return True
-        else:
-            return False
+        return self.re == other.re and self.im == other.im
 
     def modeq(self, other):  # Compares whether moduli of numbers are equivalent.
-        if self.modulus() == other.modulus():
-            return True
-        else:
-            return False
+        return self.modulus() == other.modulus()
 
     def __gt__(self, other):  # Compares moduli of numbers.
-        if self.modulus() > other.modulus():
-            return True
-        else:
-            return False
+        return self.modulus() > other.modulus()
 
-    def __lt__(self, other): # Compares moduli of numbers.
-        if self.modulus() < other.modulus():
-            return True
-        else:
-            return False
+    def __lt__(self, other):
+        return self.modulus() < other.modulus()
 
     def __ge__(self, other):  # Compares moduli of numbers.
-        if self.modulus() >= other.modulus():
-            return True
-        else:
-            return False
+        return self.modulus() >= other.modulus()
 
     def __le__(self, other):  # Compares moduli of numbers.
-        if self.modulus() <= other.modulus():
-            return True
-        else:
-            return False
+        return self.modulus() <= other.modulus()
 
     def matrix(self):  # Returns the matrix form of the number.
         M = [[self.re, -1 * self.im],
