@@ -84,7 +84,7 @@ class Cnumber:
 
     def matrix(self):  # Returns the matrix form of the number.
         M = [[self.re, -1 * self.im],
-             [self.im, -1 * self.re]]
+             [self.im, self.re]]
 
         return M
 
